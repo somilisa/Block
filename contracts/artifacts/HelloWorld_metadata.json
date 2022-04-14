@@ -1,10 +1,40 @@
 {
 	"compiler": {
-		"version": "0.8.12+commit.f00d7308"
+		"version": "0.8.13+commit.abaa5c0e"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_message",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "oldStr",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "newStr",
+						"type": "string"
+					}
+				],
+				"name": "UpdatedMessages",
+				"type": "event"
+			},
 			{
 				"inputs": [],
 				"name": "message",
@@ -22,11 +52,11 @@
 				"inputs": [
 					{
 						"internalType": "string",
-						"name": "_message",
+						"name": "newMsg",
 						"type": "string"
 					}
 				],
-				"name": "setMessage",
+				"name": "update",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -73,11 +103,11 @@
 	},
 	"sources": {
 		"contracts/HelloWorld.sol": {
-			"keccak256": "0xc7f7522a1909b014febce1b8b9584da98ec83c358a05ffddfea9dbf81c83d6fe",
+			"keccak256": "0x83ba7610a38a5f31a2fa660b063e67244794201461fb73ed1bee931ab46a0125",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://0b6848f7f3b0b6519067c53275ff6687c1f81fbc42a6b4de69ae399848965fb1",
-				"dweb:/ipfs/QmXzxWPycxZvfxZzqhUpjZmo5DHWx9vWoevpfGVxvZ4EAc"
+				"bzz-raw://bf78140d5493c42b2e4ebd6180e584d6a36ed84d04691c5445e9d279785d5af9",
+				"dweb:/ipfs/QmUjwee6xZezgdm43sMPpzS6dJHmfpLhakdVWtq4UALASo"
 			]
 		}
 	},
